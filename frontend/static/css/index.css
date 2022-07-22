@@ -1,17 +1,36 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
+    /*
     padding: 0; 
     margin: 0;
-    border: 0;
-    font-family: 'Trebuchet MS', sans-serif;
+    border: 0;*/
+    font-family: 'Open Sans';
 }
+
+
+
 .image{
-    background: url("../images/incienso3.png");
-    height:fit-content;
-    border-style: solid;
+    background: url("../images/portada.png");
+    background-size: cover;
+
+    height:50%;
+    /*border-style: solid;*/
 }
+
 h1{
     font-weight: normal;
-    color: rgb(228, 228, 228);
+    font-size: 20px;
+    letter-spacing:3pt;
+   /* color: rgb(228, 228, 228); */
+
 }
 h2{
     font-size: x-large;
@@ -22,31 +41,52 @@ h3{
     font-size: large;
     font-weight: normal;
 }
-.sec1{
-    padding: 15px;
+
+.text{
+    /*
+    padding: 10px; 
+    margin: 0px;
+    margin-left: 5px;*/
+    color: #545454;
+    font-family: 'Open Sans';
 }
+
+.content{
+    /*
+    margin: auto;
+    width: 50%;
+    border-style: solid;
+    border-width: 0px;*/
+    color: #545454;
+    
+}
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 .top{
-    /*border-spacing: 0;
+/*    border-spacing: 0;
     border-width: 0px;
     border-bottom-width:0px;
     border-style: solid;
     border-color: black;
-    background-color: rgb(26, 26, 26);
-    box-shadow: 0px 5px 5px rgb(27, 27, 27);*/
-    width: 50%;
+    box-shadow: 0px 5px 5px rgb(27, 27, 27);
+*/  
+    font-family: 'ralewayregular';
+    background-color: #EFDDCA;
+    color: #545454;
     padding: 15px;
 }
 
-.text{
-    padding: 10px; 
-    margin: 0px;
-    margin-left: 5px;
-    color: rgb(228, 228, 228);
+.sec1{
+    padding: 15px;
+    /*height: 500px;*/
 }
 
-.content{
-    margin: auto;
-    width: 50%;
-    border-style: solid;
-    border-width: 0px;
+.sec2{
+    color: #545454;
+}
+.sec3{
+    color: #545454;
 }
