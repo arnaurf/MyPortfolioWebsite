@@ -13,16 +13,17 @@ export default class HomePage extends Component{
             .then((response) => response.json())
             .then((data) => this.setState(data));
     }
-
+                    
     render(){
         let text;
         if (this.state !== undefined && this.state !== null) {
             text = Object.values(this.state).map( data => 
-                <div key={data.id} className="text" >
-                    <h2>{data.title}</h2>
-                    <h3>{data.subtitle}</h3>
-                    <p>{data.description}</p>
-                    <a href={data.github}>Github</a>
+                <div key={data.id} className="card" style={{width: "90%", margin:"30px", padding: "10px", backgroundColor: "white", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
+                    <h5 className="card-title">{data.title}</h5>
+                    <p className="card-text">{data.subtitle}</p>
+                    <p className="card-text">{data.description}</p>
+
+                    <a href="#" className="btn btn-primary"><a href={data.github}>Github</a></a>
                 </div>
             )
         } else {
@@ -71,21 +72,22 @@ export default class HomePage extends Component{
                         <p>
                             My interests lie in solving problems related to large-scale distributed software systems
                         </p>
-                        <list>Interests
+                        <ul>Interests
                             <li>Distributed Computing</li>
                             <li>Cloud Computing</li>
                             <li>Software Engineering</li>
                             <li>Information Security</li>
-                        </list>
+                        </ul>
                     </div>
                     <div className="col-md-1"></div>
                 </div>
+                
                 <div className="row text" style={{padding: "20px"}}>
                     <center>
                         <div className="row" style={{padding: "20px"}}>
                             <b style={{fontSize:"40px", color:"black"}}>Skills</b>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{padding: "20px"}}>
                             <div className="col-md-4">
                                 <img src="static/images/skype.png" alt="Profile Photo" width={"60"}/><br/>
                                 <b style={{fontSize:"35px"}}>C++</b><br/>
@@ -102,18 +104,32 @@ export default class HomePage extends Component{
                                 <span>Something about C++</span>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{padding: "20px"}}>
                             <div className="col-md-4">
-
+                                <img src="static/images/skype.png" alt="Profile Photo" width={"60"}/><br/>
+                                <b style={{fontSize:"35px"}}>C++</b><br/>
+                                <span>Something about C++</span>
                             </div>
                             <div className="col-md-4">
-
+                                <img src="static/images/skype.png" alt="Profile Photo" width={"60"}/><br/>
+                                <b style={{fontSize:"35px"}}>C++</b><br/>
+                                <span>Something about C++</span>
                             </div>
                             <div className="col-md-4">
-
+                                <img src="static/images/skype.png" alt="Profile Photo" width={"60"}/><br/>
+                                <b style={{fontSize:"35px"}}>C++</b><br/>
+                                <span>Something about C++</span>
                             </div>
                         </div>
                     </center>
+                </div>
+
+
+                <div className="row" style={{backgroundColor: "#ededec", padding: "35px", fontFamily: 'Open Sans'}}>
+                    
+                        <div className="col-md-4"><b style={{fontSize:"40px", color:"black"}}><center>Expierence</center></b></div>
+                        <div className="col-md-7"><center>{text}</center></div>
+                   
                 </div>
                 {/*
                 <div className="image">

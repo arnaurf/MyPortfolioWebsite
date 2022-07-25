@@ -13,6 +13,7 @@ body{
     margin: 0;
     border: 0;*/
     font-family: 'Open Sans';
+    background-color: #efe9e3;
 }
 
 
@@ -79,6 +80,12 @@ h3{
     padding: 15px;
 }
 
+.card-title{
+    color:#353535
+}
+.card-text{
+    color:#545454
+}
 .sec1{
     padding: 15px;
     /*height: 500px;*/
