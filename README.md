@@ -15,11 +15,9 @@
   <li> Host it with AWS or a similar service
   <li> Implement new projects on the website, such as a real-time chat, a blog, or an URL shortener.
   </ul>
-###
-<h2 align="left">Prototype</h2>
 
 ###
-
+<h2 align="left">Coded with</h2>
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="javascript logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="52" alt="python logo"  />
@@ -32,5 +30,6 @@
 </div>
 
 ###
+<h2 align="left">Prototype</h2>
 <img src="https://i.ibb.co/rGF4qC9/web.png">
-<h2 align="left">Coded with</h2>
+
