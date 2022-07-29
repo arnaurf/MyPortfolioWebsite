@@ -17,8 +17,6 @@
   </ul>
 ###
 <h2 align="left">Prototype</h2>
-<img src="https://i.ibb.co/rGF4qC9/web.png">
-<h2 align="left">Coded with</h2>
 
 ###
 
@@ -34,3 +32,5 @@
 </div>
 
 ###
+<img src="https://i.ibb.co/rGF4qC9/web.png">
+<h2 align="left">Coded with</h2>
