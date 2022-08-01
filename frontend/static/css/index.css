@@ -42,6 +42,9 @@ h3{
     font-size: large;
     font-weight: normal;
 }
+h4{
+    font-size:40px;
+}
 
 .text{
     /*
@@ -67,33 +70,78 @@ h3{
     transform: translateY(-50%);
   }
 .top{
-/*    border-spacing: 0;
-    border-width: 0px;
+/*    
     border-bottom-width:0px;
     border-style: solid;
     border-color: black;
     box-shadow: 0px 5px 5px rgb(27, 27, 27);
+
+    padding: 15px;
+
 */  
     font-family: 'ralewayregular';
     background-color: #EFDDCA;
     color: #545454;
-    padding: 15px;
+    z-index: 2;
+    border-style: solid;
+    border-spacing: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: #c2c2c2;
+    width:100%;
+
 }
 
 .card-title{
+    font-weight: bolder;
     color:#353535
 }
 .card-text{
     color:#545454
 }
-.sec1{
+
+/*
+.card-2{
+
+}
+
+.btn-github{
+
+}
+*/
+#sec1{
     padding: 15px;
     /*height: 500px;*/
 }
 
-.sec2{
+#sec2{
     color: #545454;
 }
-.sec3{
+#sec3{
     color: #545454;
+}
+.btn-outline-primary{
+    --bs-btn-color:#997249;
+    --bs-btn-border-color:#997249;
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg:#997249;
+    --bs-btn-hover-border-color:#997249;
+    --bs-btn-focus-shadow-rgb:13,110,253;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:#997249;
+    --bs-btn-active-border-color:#997249;
+    --bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#997249;
+    --bs-btn-disabled-bg:transparent;
+    --bs-gradient:none
+    --btn-img-hover-content: url("../images/icons/github.png");
+    
+}
+
+#btn-img{
+    width: 15px;
+}
+
+#btn-img:hover{
+    content: url("../images/icons/github.png");
 }
