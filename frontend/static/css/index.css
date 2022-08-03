@@ -110,7 +110,7 @@ h4{
 }
 */
 #sec1{
-    padding: 15px;
+    width: 100%;
     /*height: 500px;*/
 }
 
@@ -144,4 +144,12 @@ h4{
 
 #btn-img:hover{
     content: url("../images/icons/github.png");
+}
+
+.col-12{
+    max-width: 200px;
+}
+
+.navbar_collapse{
+    align-items: center;
 }

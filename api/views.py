@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from rest_framework import generics, status
 from .serializers import PostSerializer, CreatePostSerializer, ExperiencePostSerializer, CreateExperiencePostSerializer, CategorySerializer, CreateCategorySerializer, CreateFormSerializer
 from .models import Post, ExperiencePost, Category, FormPost
+from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -74,7 +75,7 @@ class CreateCategoryView(APIView):
 
         return Response({'Bad Request': 'Invalid data...'}, status=status.HTTP_400_BAD_REQUEST)
 
-
+#@csrf_exempt
 class CreateFormView(APIView):
     serializer_class = CreateFormSerializer
 
@@ -83,8 +84,11 @@ class CreateFormView(APIView):
         #convert user sent data to python data
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            name = serializer.data.get('name', 'email', 'message')
-            mypost = FormPost(name=name)
+            name = serializer.data.get('name')
+            email = serializer.data.get('email')
+            message = serializer.data.get('message')
+
+            mypost = FormPost(name=name, email=email, message=message)
             mypost.save()
             return Response(status=status.HTTP_201_CREATED)
 
