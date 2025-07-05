@@ -8,6 +8,7 @@ services:
   - type: web
     plan: free
     name: arnauruiz
+    region: frankfurt
     runtime: python
     buildCommand: './build.sh'
     startCommand: 'python -m gunicorn arnauruiz.asgi:application -k uvicorn.workers.UvicornWorker'
