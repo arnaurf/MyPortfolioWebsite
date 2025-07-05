@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a/arnauruizdb',
+        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a/arnauruizdbf',
         conn_max_age=600
     )
 }
@@ -130,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # This production code might break development mode, so we check whether we're in DEBUG mode
 if not DEBUG:
