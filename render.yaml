@@ -11,7 +11,7 @@ services:
     region: frankfurt
     runtime: python
     buildCommand: './build.sh'
-    startCommand: 'python -m gunicorn arnauruiz.asgi:application -k uvicorn.workers.UvicornWorker'
+    startCommand: 'python -m gunicorn portfolio.asgi:application -k uvicorn.workers.UvicornWorker'
     envVars:
       - key: DATABASE_URL
         fromDatabase:
