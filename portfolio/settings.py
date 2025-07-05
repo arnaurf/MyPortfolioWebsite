@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a.frankfurt-postgres.render.com/arnauruizdb',
+        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a/arnauruizdb',
         conn_max_age=600
     )
 }
