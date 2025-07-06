@@ -83,20 +83,20 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 # render.com uses postgresql
-DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a/arnauruizdbf',
-        conn_max_age=600
-    )
-}
-
 #DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
+#    'default': dj_database_url.config(
+#        # Replace this value with your local database's connection string.
+#        default='postgresql://arnauruizdb_user:vEv4cenFF9O0e4DjB6zF7j97zzaTJagK@dpg-d1kfht6r433s73cgr8ag-a/arnauruizdbf',
+#        conn_max_age=600
+#    )
 #}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
