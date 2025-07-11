@@ -152,14 +152,14 @@ export default class HomePage extends Component{
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light top" style={{paddingLeft:"30px", paddingRight:"30px", position: "fixed"}}>
                     <div className="d-none d-lg-inline-flex">
-                        <a className="navbar-brand" href="/">ARNAU RUIZ FERNANDEZ</a>
+                        <a className="navbar-brand" href="/">ARNAU RUIZ</a>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="container justify-content-center">
                         <div className="navbar-brand-mobile-wrapper d-inline-flex d-lg-none ">
-                            <a className="navbar-brand" href="/">ARNAU RUIZ FERNANDEZ</a>
+                            <a className="navbar-brand" href="/">ARNAU RUIZ</a>
                         </div>
                     </div>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -188,116 +188,101 @@ export default class HomePage extends Component{
                 </nav>
 
 
-                <div id="sec1" className="image text " style={{paddingTop: "35px", paddingBottom: "35px"}}>
+                <div id="sec1" className="image text " style={{paddingTop: "70px", paddingBottom: "50px"}}>
                     <div className="container">
-                        <div className="row justify-content-center" style={{marginTop: "60px"}} >
-                            <div className="col-12 col-lg-6" style={{maxWidth: "400px"}}>
-                                    <center>
-                                            <img src="static/images/perfil.png" alt="Profile Photo" style={{margin: "15px"}}width={"250"}/>
-                                            <br/>
-                                            <span style={{color: "white", fontSize: "30px", margin: "10px", marginTop:"30px"}}>Arnau Ruiz Fernández</span><br/>
-                                            <span style={{color: "#A6A6A6", fontSize: "17px", lineHeight: "0.1px"}}>Audiovisual Systems Engineer<br/>
-                                                Programmer<br/>
-                                                Musician<br/>
-                                            </span>
-                                            <div style={{marginTop: "8px"}}>
-                                                <a href="https://github.com/arnaurf/" target="_blank"><img style={{margin: "10px"}} src="static/images/icons/github.png" alt="Github" width={"35"}/></a>
-                                                <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank"><img style={{margin: "10px"}} src="static/images/icons/linkedin.png" alt="linkedin" width={"35"}/></a>
-                                                <a href="mailto: arnauruiz1998@gmail.com" target="_blank"><img style={{margin: "10px"}} src="static/images/icons/mail.png" alt="Mail" width={"35"}/></a>
-                                                <a href="static/docs/Arnau-Ruiz-Fernandez-CV.pdf" target="_blank"><img style={{margin: "10px"}} src="static/images/icons/cv.png" alt="CV" width={"35"}/></a>
-                                            </div>
-                                    </center>
-                                
-                            </div>
-                            <div className="col-12 col-lg-6" style={{maxWidth: "800px", color: "white"}}>
-                                <h4>Biography</h4><br/>
-                                <p>Hi, I am Arnau Ruiz a 24-year-old engineer. I have recently graduated in Audiovisual Systems Engineering at Pompeu Fabra University, Barcelona.</p>
+                        <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
+                            <div className="col-12 col-lg-6" style={{ maxWidth: "400px" }}>
+                                <center>
+                                <img src="static/images/perfil.png" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} />
+                                <br />
+                                <span style={{ color: "#f7ece3", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
+                                    Arnau Ruiz
+                                </span><br />
+                                <strong style={{ fontSize: "0.9rem", color: "#eee4ddff" }}>Recordings Operations Engineer</strong><br />
+                                <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
-                                <p>When I was a child, I started being interested in audio, programming, image and video editing, and I started learning Arduino, Processing, and databases. When I was a teenager, I also started recording and mixing music. On the other hand, I have been playing guitar since I was 9 and bass guitar since I was 16. I wanted to learn more about programming and audio science and for that reason, I chose studying Audiovisual Systems Engineering.</p>
-                                
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <h3>- Interests</h3>
-                                        <ul>
-                                            <li>Audio programming</li>
-                                            <li>Computer Graphics</li>
-                                            <li>Full-Stack Development</li>
-                                            <li>Software Engineering</li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <h3>- Education</h3>
-                                        <ul>
-                                        Audiovisual Systems Engineering, 2016-2021<br/>
-                                        <span style={{color: "#C8C8C8", fontSize:"13px"}}>@ Pompeu Fabra Univesity</span>
-                                        </ul>
-                                        
-                                    </div>
+                                <div style={{ marginTop: "8px" }}>
+                                    <a href="https://github.com/arnaurf/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/github.png" alt="Github" width={"35"} /></a>
+                                    <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.png" alt="linkedin" width={"35"} /></a>
+                                    <a href="mailto: arnauruiz1998@gmail.com" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/mail.png" alt="Mail" width={"35"} /></a>
                                 </div>
-                                
-                                
+                                </center>
                             </div>
+
+                            <div className="col-12 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
+  
+                                <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 95%, 0.90)   " }}>
+                                    Engineering from Barcelona, blending technology and art
+                                </h2>
+                                <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
+                                <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+                                    I’m an <strong>Audiovisual Systems Engineer</strong> from Pompeu Fabra University with a strong interest in{" "}
+                                    <span style={{ color: "#ff6f61" }}>programming</span>,{" "}
+                                    <span style={{ color: "#ff6f61" }}>Linux environments</span>, and{" "}
+                                    <span style={{ color: "#ff6f61" }}>audio technology</span>. 
+                                </p>
+
+                                <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
+                                    I combine a technical mindset with a creative spirit, aiming to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
+                                </p>
+
+                                </div>
+
                         </div>
+
                     </div>
                 </div>
                 
-                <div id="sec2" className="row text" style={{padding: "50px"}}>
+                <div id="sec2" className="row text" style={{padding: "80px"}}>
                     <center>
-                        <div className="row">
-                            <b style={{fontSize:"40px", color:"black"}}>Skills</b>
-                        </div>
+
                         <div className="row justify-content-center">
                             <div className="col-md-3" style={{paddingTop: "40px"}}>
                                 <img src="static/images/icons/signal.png" alt="Signal and audio processing" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                 <span style={{fontSize:"20px", color:"black"}}>Signal Processing and Audio</span><br/>
-                                <span style={{fontSize:"15px"}}>Matlab, Jupyter Notebook, JUCE, VST</span>
+                                <span style={{fontSize:"15px"}}>Ffmpeg, Matlab, Jupyter Notebook, JUCE, VST</span>
                             </div>
                             <div className="col-md-3" style={{paddingTop: "40px"}}>
                                 <img src="static/images/icons/graphics.png" alt="Computer Graphics" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                <span style={{fontSize:"20px", color:"black"}}>Computer Graphics</span><br/>
-                                <span style={{fontSize:"15px"}}>Realtime and Volumetric rendering, PBR, OpenGL, Unity, Unreal Engine</span>
+                                <span style={{fontSize:"20px", color:"black"}}>Systems</span><br/>
+                                <span style={{fontSize:"15px"}}>Linux, Puppet, Check mk, FTP, streaming protocols, broadcasting systems</span>
                             </div>
-                            <div className="col-md-3" style={{paddingTop: "40px"}}>
-                                <img src="static/images/icons/fullstack.png" alt="Full-Stack" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                <span style={{fontSize:"20px", color:"black"}}>Full-Stack</span><br/>
-                                <span style={{fontSize:"15px"}}>Django, React, Node.js, CSS, HTML, Bootstrap, REST, MySQL</span>
-                            </div>
-                        </div>
-                        <div className="row justify-content-center">
                             <div className="col-md-3" style={{paddingTop: "40px"}}>
                                 <img src="static/images/icons/code.png" alt="Programming Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                 <span style={{fontSize:"20px", color:"black"}}>Programming Languages</span><br/>
-                                <span style={{fontSize:"15px"}}>C++, Matlab, Python<br/>Also C, Javascript, Java, Processing/Arduino</span>
+                                <span style={{fontSize:"15px"}}>Python, C++, Bash<br/>Also Matlab, C, Processing/Arduino</span>
                             </div>
-                            <div className="col-md-3" style={{paddingTop: "40px"}}>
-                                <img src="static/images/icons/tools.png" alt="Tools" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                <span style={{fontSize:"20px", color:"black"}}>Tools</span><br/>
-                                <span style={{fontSize:"15px"}}>Visual Code/Studio, Netbeans, Pycharm, Trello, Github, Photoshop, Premiere Pro, Audacity, Pro Tools, Reaper</span>
-                            </div>
-                            <div className="col-md-3" style={{paddingTop: "40px"}}>
+                        </div>
+                        <div className="row justify-content-center">
+                            <div className="col-md-3" style={{paddingTop: "60px"}}>
                                 <img src="static/images/icons/language.png" alt="Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                 <span style={{fontSize:"20px", color:"black"}}>Languages</span><br/>
                                 <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
+                            </div>
+                            <div className="col-md-3" style={{paddingTop: "60px"}}>
+                                <img src="static/images/icons/tools.png" alt="Tools" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                <span style={{fontSize:"20px", color:"black"}}>More!</span><br/>
+                                <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
+                            </div>
+                            <div className="col-md-3" style={{paddingTop: "60px"}}>
+                                <img src="static/images/icons/fullstack.png" alt="Full-Stack" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                <span style={{fontSize:"20px", color:"black"}}>Web Development</span><br/>
+                                <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
                             </div>
                         </div>
                     </center>
                 </div>
 
 
-                <div id="sec3" className="row justify-content-sm-center justify-content-center" style={{backgroundColor: "#ededec", paddingTop: "100px", paddingBottom: "100px", fontFamily: 'Open Sans'}}>
+                <div id="sec3" className="row justify-content-sm-center justify-content-center" style={{backgroundColor: "rgba(250, 246, 243, 1)", paddingTop: "100px", paddingBottom: "100px", fontFamily: 'Open Sans'}}>
                     
-                        <div className="col-md-4"><b style={{fontSize:"40px", color:"black"}}><center>Expierence</center></b></div>
+                        <div className="col-md-4"><b style={{fontSize:"40px", color:"rgba(30, 30, 30, 1)"}}><center>Expierence</center></b></div>
                         <div className="col-md-8 col-sm-8 col-8">{experience}</div>
                     
                 </div>
 
                 <div id="sec4" className="row justify-content-sm-center justify-content-center" style={{paddingTop: "100px", paddingBottom: "100px", fontFamily: 'Open Sans'}}>
-                        <div className="col-md-4">
-                            <b style={{fontSize:"40px", color:"black"}}>
-                            <center>Projects
-                            </center>
-                            </b>
-                        </div>
+                        <div className="col-md-4"><b style={{fontSize:"40px", color:"rgba(30, 30, 30, 1)"}}><center>Projects</center></b></div>
                         <div className="col-md-8 col-sm-8 col-8">
                             {category_text}
                             {projects}
@@ -306,10 +291,10 @@ export default class HomePage extends Component{
                 
                 </div>
 
-                <div id="sec5" className="row text" style={{padding: "20px", backgroundColor: "#ededec"}}>
+                <div id="sec5" className="row text" style={{padding: "20px", backgroundColor: "rgba(250, 246, 243, 1)"}}>
                     <center>
                         <div className="row" style={{padding: "20px"}}>
-                            <b style={{fontSize:"40px", color:"black"}}>Contact</b>
+                            <b style={{fontSize:"40px", color:"rgba(30, 30, 30, 1)"}}>Contact</b>
                         </div>
                     </center>
                     <div className="col-md-3"></div>
