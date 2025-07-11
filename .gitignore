@@ -1,0 +1,21 @@
+# Entorno virtual
+venv/
+*.pyc
+__pycache__/
+
+# Base de datos local
+db.sqlite3
+
+# Node modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Archivos de logs, cache, etc.
+*.log
+*.sqlite3-journal
+
+# Archivos de configuración locales
+*.local
+.DS_Store
