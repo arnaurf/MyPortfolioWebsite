@@ -217,7 +217,7 @@ export default class HomePage extends Component{
 
                             <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
                                 <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.90)" }}>
-                                    <p className="text-center text-lg-start">Engineering from Barcelona, blending technology and art</p>
+                                    <p className="text-center text-lg-start">A Barcelona-based Engineer fusing technology with creativity</p>
                                 </h2>
                                 <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
                                 <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
@@ -228,7 +228,7 @@ export default class HomePage extends Component{
                                 </p>
 
                                 <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
-                                    I combine a technical mindset with a creative spirit, aiming to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
+                                    My main goal is to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
                                 </p>
                             </div>
                         </div>
