@@ -21,7 +21,7 @@ body{
 .image{
     background: url("../images/portada.jpg");
     background-size: cover;
-
+    background-color: rgb(42,28,35);
     height:50%;
     /*border-style: solid;*/
 }
