@@ -50,17 +50,30 @@ export default class HomePage extends Component{
         this.setState({[name]: target.value});
     }
 
-    handleSubmit(){
-        fetch("/api/create-form", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: this.state.Name,
-                email: this.state.Email,
-                message: this.state.Message,
-            }),
-        })
-        this.setState({Name: '', Email: '', Message: ''});
+    handleSubmit = async (event) => {
+        event.preventDefault(); 
+
+        try {
+            const response = await fetch("/api/create-form/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "X-CSRFToken": csrftoken },
+                body: JSON.stringify({
+                    name: this.state.Name,
+                    email: this.state.Email,
+                    message: this.state.Message,
+                }),
+            });
+            if (response.ok) { // Comprueba si la respuesta fue exitosa (código 200-299)
+                console.log("Formulario enviado con éxito.");
+                this.setState({Name: '', Email: '', Message: ''}); 
+            } else {
+                console.error("Error when submiting the Contact form: ", response.status);
+                const errorData = await response.json();
+                console.error("Error:", errorData);
+            }
+        } catch (error) {
+            console.error("Connection error: ", error);
+        }
     }
 
     componentDidMount(){
