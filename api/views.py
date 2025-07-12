@@ -4,6 +4,7 @@ from rest_framework import generics, status
 from .serializers import PostSerializer, CreatePostSerializer, ExperiencePostSerializer, CreateExperiencePostSerializer, CategorySerializer, CreateCategorySerializer, CreateFormSerializer
 from .models import Post, ExperiencePost, Category, FormPost
 from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import send_mail
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -84,14 +85,20 @@ class CreateFormView(APIView):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            """
-            name = serializer.data.get('name')
-            email = serializer.data.get('email')
-            message = serializer.data.get('message')
 
-            mypost = FormPost(name=name, email=email, message=message)
-            mypost.save()
-            """
+            subject = 'Nuevo mensaje de contacto desde tu portfolio'
+            message = f"Has recibido un nuevo mensaje:\n\nNombre: {serializer.validated_data['name']}\nCorreo: {serializer.validated_data['email']}\nMensaje:\n{serializer.validated_data['message']}"
+            from_email = 'tu_correo@tudominio.com'  # Correo configurado en settings.py
+            recipient_list = ['arnauruiz1998@gmail.com'] # Tu correo para recibir el mensaje
+
+            send_mail(
+                subject,
+                message,
+                from_email,
+                recipient_list,
+                fail_silently=False,
+            )
+
             return Response(status=status.HTTP_201_CREATED)
 
         return Response({'Bad Request': 'Invalid data...'}, status=status.HTTP_400_BAD_REQUEST)
