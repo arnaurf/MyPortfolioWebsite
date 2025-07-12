@@ -14,7 +14,6 @@ body{
     border: 0;*/
     font-family: 'Open Sans';
     background-color: #efe9e3;
-    color: white
 }
 
 
@@ -88,13 +87,15 @@ h4{
     border-color: #c2c2c2;
 */
     font-family: 'ralewayregular';
-    background-color: rgba(250, 246, 243, 1);
+    background-color: hsl(30, 50%, 97%);
     color: #545454;
     z-index: 2;
 
     width:100%;
     box-shadow: 5px 5px 10px rgba(184, 184, 184, 0.3)
 }
+
+
 
 .card-title{
     font-weight: bolder;
@@ -120,10 +121,21 @@ h4{
 
 #sec2{
     color: #545454;
+    background-color: hsl(27, 50%, 95%);
 }
 #sec3{
     color: #545454;
+    background-color: hsl(26, 60%, 97%);
 }
+
+#sec4{
+    background-color: hsl(27, 50%, 95%);
+}
+
+#sec5{
+    background-color: hsl(26, 60%, 97%);
+}
+
 .btn-outline-primary{
     --bs-btn-color:#997249;
     --bs-btn-border-color:#997249;
