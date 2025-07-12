@@ -31,5 +31,5 @@ https://www.arnauruiz.com
 
 ###
 <h2 align="left">Prototype</h2>
-<img src="https://i.ibb.co/rGF4qC9/web.png">
+<img src="https://i.ibb.co/2Yq6g0SJ/Screenshot-2025-07-12-at-02-01-13.png">
 
