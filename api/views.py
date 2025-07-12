@@ -90,7 +90,9 @@ class CreateFormView(APIView):
             message = f"Has recibido un nuevo mensaje:\n\nNombre: {serializer.validated_data['name']}\nCorreo: {serializer.validated_data['email']}\nMensaje:\n{serializer.validated_data['message']}"
             from_email = 'tu_correo@tudominio.com'  # Correo configurado en settings.py
             recipient_list = ['arnauruiz1998@gmail.com'] # Tu correo para recibir el mensaje
+            
 
+            print(subject)
             send_mail(
                 subject,
                 message,
