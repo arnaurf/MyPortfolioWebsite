@@ -288,7 +288,7 @@ export default class HomePage extends Component{
                                     </b>
                                 </div>
                             </div>
-                            <div className="col-lg-8 col-sm-8 col-8"><br></br>{experience}</div>
+                            <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}><br></br>{experience}</div>
                         </div>
                         
                     </div>
@@ -306,7 +306,7 @@ export default class HomePage extends Component{
                                 </div>
                             </div>
 
-                            <div className="col-lg-8 col-sm-8 col-8">
+                            <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}>
                                 <br></br>
                                 {category_text}
                                 {projects}
