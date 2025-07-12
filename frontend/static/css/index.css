@@ -95,7 +95,11 @@ h4{
     box-shadow: 5px 5px 10px rgba(184, 184, 184, 0.3)
 }
 
-
+.btn-secondary.active, .btn-secondary:focus {
+  background-color: #5a6268; /* Un color más oscuro para el fondo */
+  border-color: #5a6268; /* Ajusta el color del borde */
+  color: #fff; /* Asegura que el texto sea visible */
+}
 
 .card-title{
     font-weight: bolder;
