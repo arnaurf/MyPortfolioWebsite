@@ -156,23 +156,34 @@ export default class HomePage extends Component{
 
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light px-3 top" style={{position: "fixed"}}>
-                    <div className="container-fluid d-flex align-items-center">
-                        {/* Left button, only for mobile*/}
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>   
+          
+            
 
-                        <a className="navbar-brand mx-auto mx-lg-0" href="/" style={{ whiteSpace: "nowrap" }}>
-                            ARNAU RUIZ&nbsp;&nbsp;&nbsp;&nbsp;
+                <nav className="navbar navbar-expand-lg navbar-light px-3 top" style={{ position: "fixed", width: "100%", zIndex: 1000 }}>
+                    <div className="container-fluid position-relative d-flex justify-content-between align-items-center">
+
+                        {/* MOBILE: Left Menu toggle */}
+                        <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+
+                        {/* DESKTOP: Left Title */}
+                        <a className="navbar-brand mx-auto d-none d-lg-block" href="/" style={{ whiteSpace: "nowrap" }} >
+                            ARNAU RUIZ
                         </a>
 
-                        {/* Empty div at right column to compensate in mobile format*/}
+                        {/* MOBILE: Center Title */}
+                        <a className="navbar-brand position-absolute d-lg-none start-50 top-0 translate-middle-x" href="/" style={{ whiteSpace: "nowrap" }} >
+                            ARNAU RUIZ
+                        </a>
+
+                        {/* Right: empty space for mobile to balance left button (optional) */}
                         <div className="d-lg-none" style={{ width: "40px" }}></div>
 
-                        {/* Desktop + collapsable nav */}
+                        {/* Right: Nav links (collapse/expand with button in MOBILE) */}
                         <div className="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarSupportedContent">
-                            <ul className="navbar-nav mr-auto">
+                            <ul className="navbar-nav">
+                                <br></br>
                                 <li className="nav-item active">
                                     <a className="nav-link" href="#sec1">BIOGRAPHY</a>
                                 </li>
@@ -193,9 +204,12 @@ export default class HomePage extends Component{
                     </div>
                 </nav>
 
-                {/* FIRST SECTION - PRESENTATION - HEADER*/}
+
+                {/* FIRST SECTION - PRESENTATION - HEADER */}
                 <div id="sec1" className="image text " style={{paddingBlock: "100px"}}>
                     <div className="container">
+
+                        {/* Left profile pic with subtitle */}
                         <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
                             <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
                                 <center>
@@ -215,8 +229,9 @@ export default class HomePage extends Component{
                                 </center>
                             </div>
 
+                            {/* Right text description about me */}
                             <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
-                                <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.90)" }}>
+                                <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.95)" }}>
                                     <p className="text-center text-lg-start">A Barcelona-based Engineer fusing technology with creativity</p>
                                 </h2>
                                 <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
@@ -224,7 +239,8 @@ export default class HomePage extends Component{
                                     I’m an <strong>Audiovisual Systems Engineer</strong> from Pompeu Fabra University with a strong interest in{" "}
                                     <span style={{ color: "#ff6f61" }}>programming</span>,{" "}
                                     <span style={{ color: "#ff6f61" }}>audio technology</span>, and{" "}
-                                    <span style={{ color: "#ff6f61" }}>Linux environments</span>. 
+                                    <span style={{ color: "#ff6f61" }}>Linux environments</span>.
+                                    When I’m not coding, I’m probably playing bass, composing, or producing music.
                                 </p>
 
                                 <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
