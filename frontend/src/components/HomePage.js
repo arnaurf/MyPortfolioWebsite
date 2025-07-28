@@ -185,19 +185,19 @@ export default class HomePage extends Component{
                             <ul className="navbar-nav">
                                 <br></br>
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#sec1">BIOGRAPHY</a>
+                                    <a className="nav-link" href="#bio">BIOGRAPHY</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#sec2">SKILLS</a>
+                                    <a className="nav-link" href="#skills">SKILLS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#sec3">WORK</a>
+                                    <a className="nav-link" href="#experience">WORK</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#sec4">PROJECTS</a>
+                                    <a className="nav-link" href="#projects">PROJECTS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#sec5">CONTACT</a>
+                                    <a className="nav-link" href="#contact">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
@@ -206,7 +206,7 @@ export default class HomePage extends Component{
 
 
                 {/* FIRST SECTION - PRESENTATION - HEADER */}
-                <div id="sec1" className="image text " style={{paddingBlock: "100px"}}>
+                <div id="bio" className="image text " style={{paddingBlock: "100px"}}>
                     <div className="container">
 
                         {/* Left profile pic with subtitle */}
@@ -252,7 +252,7 @@ export default class HomePage extends Component{
                 </div>
 
                 {/* SECTION 2 - SKILLS */}
-                <div id="sec2" className="text" style={{padding: "80px"}}>
+                <div id="skills" className="text" style={{padding: "80px"}}>
                     <div className="container">
                         <center>
                             <div className="row justify-content-center">
@@ -294,7 +294,7 @@ export default class HomePage extends Component{
                 </div>
 
                 {/* SECTION 3 - EXPERIENCE - JOBS */}
-                <div id="sec3" style={{backgroundColor: "hsl(26, 60%, 97%)", padding: "60px", fontFamily: 'Open Sans'}}>
+                <div id="experience" style={{backgroundColor: "hsl(26, 60%, 97%)", padding: "60px", fontFamily: 'Open Sans'}}>
                     <div className="container">
                         <div className="row justify-content-sm-center justify-content-center">
                             <div className="col-lg-4 d-flex">
@@ -311,7 +311,7 @@ export default class HomePage extends Component{
                 </div>
 
                 {/* SECTION 4 - PROJECTS - GITHUB */}
-                <div id="sec4" style={{padding: "60px", fontFamily: 'Open Sans'}}>
+                <div id="projects" style={{padding: "60px", fontFamily: 'Open Sans'}}>
                     <div className="container">
                         <div className="row justify-content-sm-center justify-content-center">
                             <div className="col-lg-4 d-flex">
@@ -332,7 +332,7 @@ export default class HomePage extends Component{
                 </div>
 
                 {/* SECTION 5 - CONTACT FORM */}
-                <div id="sec5" className="text" style={{padding: "20px", minWidth: "150px", backgroundColor: "hsl(26, 60%, 97%)"}}>
+                <div id="contact" className="text" style={{padding: "20px", minWidth: "150px", backgroundColor: "hsl(26, 60%, 97%)"}}>
                     <div className="container">
                         <center>
                             <div className="row" style={{padding: "20px", minWidth: "150px"}}>
