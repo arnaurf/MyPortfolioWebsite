@@ -132,7 +132,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" target="_blank"><img src="static/images/icons/github2.png" id="btn-img"/> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" target="_blank"><img src="static/images/icons/github2.webp" id="btn-img"/> Github</a>
                 </div>
             )
         } else {
@@ -213,7 +213,7 @@ export default class HomePage extends Component{
                         <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
                             <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
                                 <center>
-                                    <img src="static/images/perfil.png" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} />
+                                    <img src="static/images/perfil.webp" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} />
                                     <br />
                                     <span style={{ color: "hsla(25, 50%, 100%, 0.95)", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
                                         Arnau Ruiz
@@ -222,9 +222,9 @@ export default class HomePage extends Component{
                                     <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
                                     <div style={{ marginTop: "8px" }}>
-                                        <a href="https://github.com/arnaurf/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/github.png" alt="Github" width={"35"} /></a>
-                                        <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.png" alt="linkedin" width={"35"} /></a>
-                                        <a href="mailto: arnauruiz1998@gmail.com" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/mail.png" alt="Mail" width={"35"} /></a>
+                                        <a href="https://github.com/arnaurf/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" alt="Github" width={"35"} /></a>
+                                        <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" alt="linkedin" width={"35"} /></a>
+                                        <a href="mailto: arnauruiz1998@gmail.com" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" alt="Mail" width={"35"} /></a>
                                     </div>
                                 </center>
                             </div>
@@ -257,34 +257,34 @@ export default class HomePage extends Component{
                         <center>
                             <div className="row justify-content-center">
                                 <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/signal.png" alt="Signal and audio processing" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/signal.webp" alt="Signal and audio processing" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Audio and Signal Processing</span><br/>
                                     <span style={{fontSize:"15px"}}>Ffmpeg, Matlab, JUCE, ReaScript (Reaper), Pure Data</span>
                                 </div>
                                 <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/graphics.png" alt="Computer Graphics" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/graphics.webp" alt="Computer Graphics" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Systems</span><br/>
                                     <span style={{fontSize:"15px"}}>Linux, Puppet, Check MK, FTP, streaming protocols, broadcasting systems</span>
                                 </div>
                                 <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/code.png" alt="Programming Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/code.webp" alt="Programming Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Programming Languages</span><br/>
                                     <span style={{fontSize:"15px"}}>Python, C++, Bash<br/>Also Matlab, C, Processing/Arduino</span>
                                 </div>
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/language.png" alt="Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/language.webp" alt="Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Languages</span><br/>
                                     <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
                                 </div>
                                 <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/fullstack.png" alt="Full-Stack" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/fullstack.webp" alt="Full-Stack" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Web Development</span><br/>
                                     <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
                                 </div>
                                 <div className="col-lg-3" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/tools.png" alt="Tools" width={"60"} style={{marginBottom: "5px"}}/><br/>
+                                    <img src="static/images/icons/tools.webp" alt="Tools" width={"60"} style={{marginBottom: "5px"}}/><br/>
                                     <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>More!</span><br/>
                                     <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
                                 </div>

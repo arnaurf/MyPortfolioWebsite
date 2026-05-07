@@ -19,7 +19,7 @@ body{
 
 
 .image{
-    background: url("../images/portada.jpg");
+    background: url("../images/portada.webp");
     background-size: cover;
     background-color: rgb(42,28,35);
     height:50%;
@@ -154,7 +154,7 @@ h4{
     --bs-btn-disabled-color:#997249;
     --bs-btn-disabled-bg:transparent;
     --bs-gradient:none
-    --btn-img-hover-content: url("../images/icons/github.png");
+    --btn-img-hover-content: url("../images/icons/github.webp");
     
 }
 
@@ -163,7 +163,7 @@ h4{
 }
 
 #btn-img:hover{
-    content: url("../images/icons/github.png");
+    content: url("../images/icons/github.webp");
 }
 
 .col-12{
