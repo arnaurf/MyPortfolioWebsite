@@ -7,3 +7,4 @@ def HomePage(request, *args, **kwargs):
 def Google(request, *args, **kwargs):
     return render(request, 'frontend/google15457510d2cba688.html')
 
+
