@@ -1,7 +1,8 @@
 from django.contrib import admin
-from django.urls import path
-from .views import HomePage, Google
+from django.urls import path, re_path
+from .views import HomePage, Google, Biography, Skills, Experience, Projects, Contact
 urlpatterns = [
     path('', HomePage),
     path('google15457510d2cba688.html', Google),
+    re_path(r'^.*$', HomePage),
 ]

@@ -92,7 +92,28 @@ export default class HomePage extends Component{
         fetch("/api/category", requestOptions)
             .then((response) => response.json())
             .then((data) => this.setState({category: data}));
-    }    
+
+        // Scroll
+        const path = window.location.pathname.replace('/', '');
+        if (path && path !== "") {
+            setTimeout(() => {
+                const element = document.getElementById(path);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'auto' }); // 'auto' para que sea instantáneo al cargar
+                }
+            }, 500); 
+        }
+        }
+
+    handleNavClick = (e, targetId) => {
+        e.preventDefault(); // Detiene la recarga de la página
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            // Actualiza la URL en la barra de direcciones sin recargar
+            window.history.pushState(null, null, `/${targetId}`);
+        }
+    };
 
     render(){
         let projects;
@@ -184,20 +205,20 @@ export default class HomePage extends Component{
                         <div className="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarSupportedContent">
                             <ul className="navbar-nav">
                                 <br></br>
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="/bio">BIOGRAPHY</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/bio" onClick={(e) => this.handleNavClick(e, 'bio')}>BIOGRAPHY</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/skills">SKILLS</a>
+                                    <a className="nav-link" href="/skills" onClick={(e) => this.handleNavClick(e, 'skills')}>SKILLS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/experience">WORK</a>
+                                    <a className="nav-link" href="/experience" onClick={(e) => this.handleNavClick(e, 'experience')}>WORK</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/projects">PROJECTS</a>
+                                    <a className="nav-link" href="/projects" onClick={(e) => this.handleNavClick(e, 'projects')}>PROJECTS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/contact">CONTACT</a>
+                                    <a className="nav-link" href="/contact" onClick={(e) => this.handleNavClick(e, 'contact')}>CONTACT</a>
                                 </li>
                             </ul>
                         </div>
