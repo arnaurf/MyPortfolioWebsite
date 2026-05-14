@@ -185,19 +185,19 @@ export default class HomePage extends Component{
                             <ul className="navbar-nav">
                                 <br></br>
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#bio">BIOGRAPHY</a>
+                                    <a className="nav-link" href="/bio">BIOGRAPHY</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#skills">SKILLS</a>
+                                    <a className="nav-link" href="/skills">SKILLS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#experience">WORK</a>
+                                    <a className="nav-link" href="/experience">WORK</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#projects">PROJECTS</a>
+                                    <a className="nav-link" href="/projects">PROJECTS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#contact">CONTACT</a>
+                                    <a className="nav-link" href="/contact">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
