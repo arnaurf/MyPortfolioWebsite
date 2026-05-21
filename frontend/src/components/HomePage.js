@@ -149,7 +149,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img"/> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github" fetchpriority="high" width="35" height="35" /> Github</a>
                 </div>
             )
         } else {
@@ -217,151 +217,153 @@ export default class HomePage extends Component{
                     </div>
                 </nav>
 
-                {/* BIOGRAPHY */}
-                <div id="bio" className="image text " style={{paddingBlock: "100px"}}>
-                    <div className="container">
-                        <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
-                            <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
-                                <center>
-                                    <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} />
-                                    <br />
-                                    <span style={{ color: "hsla(25, 50%, 100%, 0.95)", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
-                                        Arnau Ruiz
-                                    </span><br />
-                                    <strong style={{ fontSize: "0.9rem", color: "#eee4ddff" }}>Recordings Operations Engineer</strong><br />
-                                    <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
+                <main>
+                    {/* BIOGRAPHY */}
+                    <div id="bio" className="image text " style={{paddingBlock: "100px"}}>
+                        <div className="container">
+                            <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
+                                <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
+                                    <center>
+                                        <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} height={"250"} />
+                                        <br />
+                                        <span style={{ color: "hsla(25, 50%, 100%, 0.95)", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
+                                            Arnau Ruiz
+                                        </span><br />
+                                        <strong style={{ fontSize: "0.9rem", color: "#eee4ddff" }}>Recordings Operations Engineer</strong><br />
+                                        <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
-                                    <div style={{ marginTop: "8px" }}>
-                                        <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github" width={"35"} /></a>
-                                        <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="linkedin" width={"35"} /></a>
-                                        <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Mail" width={"35"} /></a>
-                                    </div>
-                                </center>
-                            </div>
+                                        <div style={{ marginTop: "8px" }}>
+                                            <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github" width={"35"}  height={"35"}/></a>
+                                            <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="linkedin" width={"35"}  width="35" height={"35"} /></a>
+                                            <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Mail" width={"35"}  height={"35"}/></a>
+                                        </div>
+                                    </center>
+                                </div>
 
-                            <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
-                                <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.95)" }}>
-                                    <span className="text-center text-lg-start d-block">A Barcelona-based Engineer fusing technology with creativity</span>
-                                </h2>
-                                <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
-                                <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                                    I’m an <strong>Audiovisual Systems Engineer</strong> from Pompeu Fabra University with a strong interest in{" "}
-                                    <span style={{ color: "#ff6f61" }}>programming</span>,{" "}
-                                    <span style={{ color: "#ff6f61" }}>audio technology</span>, and{" "}
-                                    <span style={{ color: "#ff6f61" }}>Linux environments</span>.
-                                    When I’m not coding, I’m probably playing bass, composing, or producing music.
-                                </p>
-                                <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
-                                    My main goal is to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
-                                </p>
+                                <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
+                                    <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.95)" }}>
+                                        <span className="text-center text-lg-start d-block">A Barcelona-based Engineer fusing technology with creativity</span>
+                                    </h2>
+                                    <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
+                                    <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+                                        I’m an <strong>Audiovisual Systems Engineer</strong> from Pompeu Fabra University with a strong interest in{" "}
+                                        <span style={{ color: "#ff6f61" }}>programming</span>,{" "}
+                                        <span style={{ color: "#ff6f61" }}>audio technology</span>, and{" "}
+                                        <span style={{ color: "#ff6f61" }}>Linux environments</span>.
+                                        When I’m not coding, I’m probably playing bass, composing, or producing music.
+                                    </p>
+                                    <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
+                                        My main goal is to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* SKILLS */}
-                <div id="skills" className="text" style={{padding: "80px"}}>
-                    <div className="container">
-                        <center>
-                            <div className="row justify-content-center">
-                                <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/signal.webp" fetchpriority="high" alt="Signal and audio processing" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Audio and Signal Processing</span><br/>
-                                    <span style={{fontSize:"15px"}}>Ffmpeg, Matlab, JUCE, ReaScript (Reaper), Pure Data</span>
+                    {/* SKILLS */}
+                    <div id="skills" className="text" style={{padding: "80px"}}>
+                        <div className="container">
+                            <center>
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/signal.webp" fetchpriority="high" alt="Signal and audio processing" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Audio and Signal Processing</span><br/>
+                                        <span style={{fontSize:"15px"}}>Ffmpeg, Matlab, JUCE, ReaScript (Reaper), Pure Data</span>
+                                    </div>
+                                    <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/graphics.webp" fetchpriority="high" alt="Computer Graphics" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Systems</span><br/>
+                                        <span style={{fontSize:"15px"}}>Linux, Puppet, Check MK, FTP, streaming protocols, broadcasting systems</span>
+                                    </div>
+                                    <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/code.webp" fetchpriority="high" alt="Programming Languages" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Programming Languages</span><br/>
+                                        <span style={{fontSize:"15px"}}>Python, C++, Bash<br/>Also Matlab, C, Processing/Arduino</span>
+                                    </div>
                                 </div>
-                                <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/graphics.webp" fetchpriority="high" alt="Computer Graphics" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Systems</span><br/>
-                                    <span style={{fontSize:"15px"}}>Linux, Puppet, Check MK, FTP, streaming protocols, broadcasting systems</span>
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/language.webp" fetchpriority="high" alt="Languages" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Languages</span><br/>
+                                        <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
+                                    </div>
+                                    <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/fullstack.webp" fetchpriority="high" alt="Full-Stack" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Web Development</span><br/>
+                                        <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
+                                    </div>
+                                    <div className="col-lg-3" style={{margin: "10px", minWidth: "250px"}}>
+                                        <img src="static/images/icons/tools.webp" fetchpriority="high" alt="Tools" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>More!</span><br/>
+                                        <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
+                                    </div>
                                 </div>
-                                <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/code.webp" fetchpriority="high" alt="Programming Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Programming Languages</span><br/>
-                                    <span style={{fontSize:"15px"}}>Python, C++, Bash<br/>Also Matlab, C, Processing/Arduino</span>
-                                </div>
-                            </div>
-                            <div className="row justify-content-center">
-                                <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/language.webp" fetchpriority="high" alt="Languages" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Languages</span><br/>
-                                    <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
-                                </div>
-                                <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/fullstack.webp" fetchpriority="high" alt="Full-Stack" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Web Development</span><br/>
-                                    <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
-                                </div>
-                                <div className="col-lg-3" style={{margin: "10px", minWidth: "250px"}}>
-                                    <img src="static/images/icons/tools.webp" fetchpriority="high" alt="Tools" width={"60"} style={{marginBottom: "5px"}}/><br/>
-                                    <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>More!</span><br/>
-                                    <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-
-                {/* WORK */}
-                <div id="experience" style={{backgroundColor: "hsl(26, 60%, 97%)", padding: "60px", fontFamily: 'Open Sans'}}>
-                    <div className="container">
-                        <div className="row justify-content-sm-center justify-content-center">
-                            <div className="col-lg-4 d-flex">
-                                <div className="mx-auto text-center text-lg-start" style={{ width: "200px", margin: "10px" }}>
-                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Work</b>
-                                </div>
-                            </div>
-                            <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}><br></br>{experience}</div>
+                            </center>
                         </div>
                     </div>
-                </div>
 
-                {/* PROJECTS */}
-                <div id="projects" style={{padding: "60px", fontFamily: 'Open Sans'}}>
-                    <div className="container">
-                        <div className="row justify-content-sm-center justify-content-center">
-                            <div className="col-lg-4 d-flex">
-                                <div className="mx-auto text-center text-lg-start" style={{ width: "200px", padding: "10px" }}>
-                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Projects</b>
+                    {/* WORK */}
+                    <div id="experience" style={{backgroundColor: "hsl(26, 60%, 97%)", padding: "60px", fontFamily: 'Open Sans'}}>
+                        <div className="container">
+                            <div className="row justify-content-sm-center justify-content-center">
+                                <div className="col-lg-4 d-flex">
+                                    <div className="mx-auto text-center text-lg-start" style={{ width: "200px", margin: "10px" }}>
+                                        <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Work</b>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}>
-                                <br></br>
-                                {category_text}
-                                {projects}
+                                <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}><br></br>{experience}</div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* CONTACT */}
-                <div id="contact" className="text" style={{padding: "20px", minWidth: "150px", backgroundColor: "hsl(26, 60%, 97%)"}}>
-                    <div className="container">
-                        <center>
-                            <div className="row" style={{padding: "20px", minWidth: "150px"}}>
-                                <b style={{fontSize:"40px", color:"rgba(64, 64, 64, 1)"}}>Contact</b>
+                    {/* PROJECTS */}
+                    <div id="projects" style={{padding: "60px", fontFamily: 'Open Sans'}}>
+                        <div className="container">
+                            <div className="row justify-content-sm-center justify-content-center">
+                                <div className="col-lg-4 d-flex">
+                                    <div className="mx-auto text-center text-lg-start" style={{ width: "200px", padding: "10px" }}>
+                                        <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Projects</b>
+                                    </div>
+                                </div>
+                                <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}>
+                                    <br></br>
+                                    {category_text}
+                                    {projects}
+                                </div>
                             </div>
-                        </center>
-                        <div className="row" style={{padding: "10px"}}>
-                            <div className="col-md-3"></div>
-                            <div className="col-md-6">
-                                <CSRFToken/>
-                                <form onSubmit={this.handleSubmit}>
-                                    <div className="form-group">
-                                        <input value={this.state.Name} name="Name" className="form-control" id="formName" placeholder="Name" onChange={this.handleChange}/><br/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input value={this.state.Email} name="Email" className="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="Enter email" onChange={this.handleChange}/><br/>
-                                    </div>
-                                    <div className="form-group">
-                                        <textarea value={this.state.Message} name="Message" className="form-control" id="formMessage" placeholder="Enter Message" onChange={this.handleChange}/><br/>
-                                    </div>
-                                    <button type="submit" className="btn btn-outline-primary">Submit</button>
-                                </form>
-                            </div>
-                            <div className="col-md-3"></div>
                         </div>
                     </div>
-                </div>
+                    
+                    {/* CONTACT */}
+                    <div id="contact" className="text" style={{padding: "20px", minWidth: "150px", backgroundColor: "hsl(26, 60%, 97%)"}}>
+                        <div className="container">
+                            <center>
+                                <div className="row" style={{padding: "20px", minWidth: "150px"}}>
+                                    <b style={{fontSize:"40px", color:"rgba(64, 64, 64, 1)"}}>Contact</b>
+                                </div>
+                            </center>
+                            <div className="row" style={{padding: "10px"}}>
+                                <div className="col-md-3"></div>
+                                <div className="col-md-6">
+                                    <CSRFToken/>
+                                    <form onSubmit={this.handleSubmit}>
+                                        <div className="form-group">
+                                            <input value={this.state.Name} name="Name" className="form-control" id="formName" placeholder="Name" onChange={this.handleChange}/><br/>
+                                        </div>
+                                        <div className="form-group">
+                                            <input value={this.state.Email} name="Email" className="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="Enter email" onChange={this.handleChange}/><br/>
+                                        </div>
+                                        <div className="form-group">
+                                            <textarea value={this.state.Message} name="Message" className="form-control" id="formMessage" placeholder="Enter Message" onChange={this.handleChange}/><br/>
+                                        </div>
+                                        <button type="submit" className="btn btn-outline-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div className="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
         )
     }
