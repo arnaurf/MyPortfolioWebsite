@@ -149,7 +149,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="35" height="35" /> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" aria-label={`Github url for ${data.title}`} target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="35" height="35" /> Github</a>
                 </div>
             )
         } else {
