@@ -1,7 +1,7 @@
-import { Create } from "@material-ui/icons";
+import Create from "@mui/icons-material/Create";
 import React, { Component } from "react";
 import { render } from "react-dom";
-import  HomePage  from "./HomePage";
+import HomePage from "./HomePage";
 
 
 export default class App extends Component {

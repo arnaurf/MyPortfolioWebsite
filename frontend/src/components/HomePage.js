@@ -5,7 +5,7 @@ function getCookie(name) {
     if (document.cookie && document.cookie !== '') {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
-            var cookie = jQuery.trim(cookies[i]);
+            var cookie = cookies[i].trim(); // Cambiado jQuery.trim por .trim() nativo
             if (cookie.substring(0, name.length + 1) === (name + '=')) {
                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                 break;
@@ -22,10 +22,6 @@ const CSRFToken = () => {
         <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken || ''} />
     );
 };
-
-$(document).ready(function() {
-    $(".dropdown-toggle").dropdown();
-});
 
 export default class HomePage extends Component{
     constructor(props){
@@ -63,7 +59,7 @@ export default class HomePage extends Component{
                     message: this.state.Message,
                 }),
             });
-            if (response.ok) { // Comprueba si la respuesta fue exitosa (código 200-299)
+            if (response.ok) {
                 console.log("Formulario enviado con éxito.");
                 this.setState({Name: '', Email: '', Message: ''}); 
             } else {
@@ -177,14 +173,11 @@ export default class HomePage extends Component{
 
         return (
             <div>
-          
-            
-
                 <nav className="navbar navbar-expand-lg navbar-light px-3 top" style={{ position: "fixed", width: "100%", zIndex: 1000 }}>
                     <div className="container-fluid position-relative d-flex justify-content-between align-items-center">
 
-                        {/* MOBILE: Left Menu toggle */}
-                        <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                        {/* MOBILE: Left Menu toggle con atributos de Bootstrap 5 */}
+                        <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
@@ -198,10 +191,9 @@ export default class HomePage extends Component{
                             ARNAU RUIZ
                         </a>
 
-                        {/* Right: empty space for mobile to balance left button (optional) */}
                         <div className="d-lg-none" style={{ width: "40px" }}></div>
 
-                        {/* Right: Nav links (collapse/expand with button in MOBILE) */}
+                        {/* Right: Nav links */}
                         <div className="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarSupportedContent">
                             <ul className="navbar-nav">
                                 <br></br>
@@ -225,12 +217,9 @@ export default class HomePage extends Component{
                     </div>
                 </nav>
 
-
-                {/* FIRST SECTION - PRESENTATION - HEADER */}
+                {/* BIOGRAPHY */}
                 <div id="bio" className="image text " style={{paddingBlock: "100px"}}>
                     <div className="container">
-
-                        {/* Left profile pic with subtitle */}
                         <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
                             <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
                                 <center>
@@ -250,7 +239,6 @@ export default class HomePage extends Component{
                                 </center>
                             </div>
 
-                            {/* Right text description about me */}
                             <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
                                 <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.95)" }}>
                                     <p className="text-center text-lg-start">A Barcelona-based Engineer fusing technology with creativity</p>
@@ -263,7 +251,6 @@ export default class HomePage extends Component{
                                     <span style={{ color: "#ff6f61" }}>Linux environments</span>.
                                     When I’m not coding, I’m probably playing bass, composing, or producing music.
                                 </p>
-
                                 <p style={{ fontSize: "1rem", lineHeight: "1.6", marginTop: "25px" }}>
                                     My main goal is to build solutions that blend <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>technology</span> and <span style={{ color: "#f7c6b5", fontWeight: "bold" }}>art</span>.
                                 </p>
@@ -272,7 +259,7 @@ export default class HomePage extends Component{
                     </div>
                 </div>
 
-                {/* SECTION 2 - SKILLS */}
+                {/* SKILLS */}
                 <div id="skills" className="text" style={{padding: "80px"}}>
                     <div className="container">
                         <center>
@@ -314,35 +301,29 @@ export default class HomePage extends Component{
                     </div>
                 </div>
 
-                {/* SECTION 3 - EXPERIENCE - JOBS */}
+                {/* WORK */}
                 <div id="experience" style={{backgroundColor: "hsl(26, 60%, 97%)", padding: "60px", fontFamily: 'Open Sans'}}>
                     <div className="container">
                         <div className="row justify-content-sm-center justify-content-center">
                             <div className="col-lg-4 d-flex">
                                 <div className="mx-auto text-center text-lg-start" style={{ width: "200px", margin: "10px" }}>
-                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>
-                                        Work
-                                    </b>
+                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Work</b>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}><br></br>{experience}</div>
                         </div>
-                        
                     </div>
                 </div>
 
-                {/* SECTION 4 - PROJECTS - GITHUB */}
+                {/* PROJECTS */}
                 <div id="projects" style={{padding: "60px", fontFamily: 'Open Sans'}}>
                     <div className="container">
                         <div className="row justify-content-sm-center justify-content-center">
                             <div className="col-lg-4 d-flex">
                                 <div className="mx-auto text-center text-lg-start" style={{ width: "200px", padding: "10px" }}>
-                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>
-                                        Projects
-                                    </b>
+                                    <b style={{ fontSize: "40px", color: "rgba(64, 64, 64, 1)" }}>Projects</b>
                                 </div>
                             </div>
-
                             <div className="col-lg-8 col-sm-8 col-8" style={{ minWidth: "300px"}}>
                                 <br></br>
                                 {category_text}
@@ -352,7 +333,7 @@ export default class HomePage extends Component{
                     </div>
                 </div>
 
-                {/* SECTION 5 - CONTACT FORM */}
+                {/* CONTACT */}
                 <div id="contact" className="text" style={{padding: "20px", minWidth: "150px", backgroundColor: "hsl(26, 60%, 97%)"}}>
                     <div className="container">
                         <center>
