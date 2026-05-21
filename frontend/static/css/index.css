@@ -159,10 +159,6 @@ h4{
     
 }
 
-#btn-img{
-    width: 15px;
-}
-
 #btn-img:hover{
     content: url("../images/icons/github.webp");
 }
