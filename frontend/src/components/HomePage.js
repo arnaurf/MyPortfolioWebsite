@@ -196,7 +196,7 @@ export default class HomePage extends Component{
                         {/* Right: Nav links */}
                         <div className="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarSupportedContent">
                             <ul className="navbar-nav">
-                                <br></br>
+                                <li className="nav-item"><br></br></li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/bio" onClick={(e) => this.handleNavClick(e, 'bio')}>BIOGRAPHY</a>
                                 </li>
