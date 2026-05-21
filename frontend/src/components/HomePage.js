@@ -149,7 +149,14 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" aria-label={`Github url for ${data.title}`} target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="20" height="20" /> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" aria-label={`Github url for ${data.title}`} target="_blank" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="btn-icon-svg" width="20" height="20" style={{ marginRight: "8px", verticalAlign: "middle" }} fill="currentColor">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                                <path d="M2380 5114 c-19 -2 -78 -9 -130 -15 -216 -24 -518 -107 -710 -195 -324 -148 -567 -319 -815 -575 -887 -913 -968 -2337 -190 -3334 411 -526 982 -861 1650 -967 201 -32 549 -32 750 0 556 88 1043 333 1433 723 836 832 990 2107 379 3124 -183 306 -474 610 -772 810 -323 216 -680 353 -1070 411 -96 14 -453 27 -525 18z m510 -319 c366 -56 718 -206 1029 -438 116 -86 334 -302 418 -412 201 -267 340 -550 413 -844 211 -845 -76 -1715 -751 -2277 -164 -138 -394 -274 -601 -357 l-88 -35 0 341 c0 374 -9 466 -54 578 -14 34 -24 64 -23 65 1 1 44 16 96 33 482 161 790 500 882 971 20 98 17 376 -5 480 -35 173 -92 319 -176 449 l-51 80 12 63 c18 94 16 338 -4 426 -35 154 -109 250 -212 273 -130 29 -332 -37 -590 -191 l-80 -48 -115 24 c-297 62 -642 57 -912 -12 l-56 -14 -77 45 c-114 67 -251 135 -329 161 -103 35 -224 50 -281 34 -95 -27 -168 -125 -202 -272 -20 -88 -22 -332 -4 -426 l12 -63 -51 -80 c-84 -130 -141 -276 -176 -449 -22 -104 -25 -382 -5 -480 92 -471 400 -810 882 -971 52 -17 95 -32 96 -33 1 -1 -8 -29 -22 -61 -13 -33 -30 -91 -38 -130 -13 -68 -15 -70 -53 -84 -63 -23 -191 -19 -240 6 -62 33 -101 69 -146 137 -107 158 -190 240 -303 299 -62 33 -155 57 -215 57 l-46 0 13 -137 c6 -76 12 -144 13 -150 0 -7 10 -13 23 -13 41 0 121 -46 167 -96 25 -27 67 -82 94 -122 27 -41 77 -100 110 -133 128 -127 347 -194 524 -160 l42 8 0 -203 0 -202 -87 35 c-970 390 -1547 1384 -1398 2409 56 384 208 737 458 1069 84 110 302 326 418 412 355 266 726 409 1184 457 82 8 404 -4 505 -19z m-1380 -919 c70 -22 156 -64 275 -135 61 -36 123 -72 139 -78 42 -19 111 -16 232 11 175 39 289 49 473 43 126 -5 195 -12 286 -32 151 -34 240 -41 280 -23 17 7 81 44 144 82 131 78 249 132 308 142 l41 6 9 -48 c13 -79 7 -282 -11 -350 -30 -115 -22 -151 54 -254 65 -88 124 -213 157 -335 23 -88 27 -119 27 -255 1 -164 -17 -265 -66 -378 -108 -247 -330 -442 -612 -536 -106 -35 -181 -52 -366 -82 -85 -14 -155 -26 -157 -27 -3 -4 71 -116 157 -237 84 -118 105 -160 119 -235 7 -36 11 -206 11 -435 l0 -376 -72 -12 c-114 -19 -263 -31 -378 -31 -115 0 -264 12 -377 31 l-73 12 0 370 c0 207 5 399 10 435 13 78 34 120 120 241 86 121 160 233 157 237 -2 1 -72 13 -157 27 -185 30 -260 47 -366 82 -282 94 -504 289 -612 536 -49 113 -67 214 -66 378 0 136 4 167 27 255 33 122 92 247 157 335 76 103 84 139 54 254 -18 68 -24 271 -11 349 9 53 15 55 87 33z" />
+                            </g>
+                        </svg>
+                        Github
+                    </a>
                 </div>
             )
         } else {
@@ -233,9 +240,9 @@ export default class HomePage extends Component{
                                         <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
                                         <div style={{ marginTop: "8px" }}>
-                                            <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github profile" width={"35"}  height={"35"}/></a>
-                                            <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="Linkedin profile" width={"35"}  width="35" height={"35"} /></a>
-                                            <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Personal Mail" width={"35"}  height={"35"}/></a>
+                                            <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.svg" fetchpriority="high" alt="Github profile" width={"35"}  height={"35"}/></a>
+                                            <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.svg" fetchpriority="high" alt="Linkedin profile" width={"35"}  width="35" height={"35"} /></a>
+                                            <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.svg" fetchpriority="high" alt="Personal Mail" width={"35"}  height={"35"}/></a>
                                         </div>
                                     </center>
                                 </div>
@@ -266,34 +273,76 @@ export default class HomePage extends Component{
                             <center>
                                 <div className="row justify-content-center">
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/signal.webp" fetchpriority="high" alt="Signal and audio processing" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/signal.svg" 
+                                            fetchpriority="high" 
+                                            alt="Signal and audio processing" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Audio and Signal Processing</span><br/>
                                         <span style={{fontSize:"15px"}}>Ffmpeg, Matlab, JUCE, ReaScript (Reaper), Pure Data</span>
                                     </div>
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/graphics.webp" fetchpriority="high" alt="Computer Graphics" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/graphics.svg" 
+                                            fetchpriority="high" 
+                                            alt="Computer Graphics" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Systems</span><br/>
                                         <span style={{fontSize:"15px"}}>Linux, Puppet, Check MK, FTP, streaming protocols, broadcasting systems</span>
                                     </div>
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/code.webp" fetchpriority="high" alt="Programming Languages" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/code.svg" 
+                                            fetchpriority="high" 
+                                            alt="Programming Languages" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Programming Languages</span><br/>
                                         <span style={{fontSize:"15px"}}>Python, C++, Bash<br/>Also Matlab, C, Processing/Arduino</span>
                                     </div>
                                 </div>
                                 <div className="row justify-content-center">
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/language.webp" fetchpriority="high" alt="Languages I Speak" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/language.svg" 
+                                            fetchpriority="high" 
+                                            alt="Languages I Speak" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Languages</span><br/>
                                         <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
                                     </div>
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/fullstack.webp" fetchpriority="high" alt="Full-Stack libraries" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/fullstack.svg" 
+                                            fetchpriority="high" 
+                                            alt="Full-Stack libraries" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Web Development</span><br/>
                                         <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
                                     </div>
                                     <div className="col-lg-3" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/tools.webp" fetchpriority="high" alt="Tools and softwares" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img 
+                                            src="static/images/icons/tools.svg" 
+                                            fetchpriority="high" 
+                                            alt="Tools and softwares" 
+                                            width={"60"} 
+                                            height={"60"} 
+                                            style={{marginBottom: "5px", filter: "drop-shadow(-1.2px 0.5px 1px rgba(0, 0, 0, 0.3))"}}
+                                        /><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>More!</span><br/>
                                         <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
                                     </div>
