@@ -224,7 +224,7 @@ export default class HomePage extends Component{
                             <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
                                 <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
                                     <center>
-                                        <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"247"} height={"250"} />
+                                        <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} height={"253"} />
                                         <br />
                                         <span style={{ color: "hsla(25, 50%, 100%, 0.95)", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
                                             Arnau Ruiz
