@@ -149,7 +149,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github" fetchpriority="high" width="35" height="35" /> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="35" height="35" /> Github</a>
                 </div>
             )
         } else {
@@ -233,9 +233,9 @@ export default class HomePage extends Component{
                                         <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
                                         <div style={{ marginTop: "8px" }}>
-                                            <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github" width={"35"}  height={"35"}/></a>
-                                            <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="linkedin" width={"35"}  width="35" height={"35"} /></a>
-                                            <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Mail" width={"35"}  height={"35"}/></a>
+                                            <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github profile" width={"35"}  height={"35"}/></a>
+                                            <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="Linkedin profile" width={"35"}  width="35" height={"35"} /></a>
+                                            <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Personal Mail" width={"35"}  height={"35"}/></a>
                                         </div>
                                     </center>
                                 </div>
@@ -283,17 +283,17 @@ export default class HomePage extends Component{
                                 </div>
                                 <div className="row justify-content-center">
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/language.webp" fetchpriority="high" alt="Languages" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img src="static/images/icons/language.webp" fetchpriority="high" alt="Languages I Speak" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Languages</span><br/>
                                         <span style={{fontSize:"15px"}}>English, Spanish, Catalan</span>
                                     </div>
                                     <div className="col-lg-3 mb-5" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/fullstack.webp" fetchpriority="high" alt="Full-Stack" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img src="static/images/icons/fullstack.webp" fetchpriority="high" alt="Full-Stack libraries" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>Web Development</span><br/>
                                         <span style={{fontSize:"15px"}}>Django, React, Node.js, Bootstrap, CSS, HTML, Javascript, REST, SQL</span>
                                     </div>
                                     <div className="col-lg-3" style={{margin: "10px", minWidth: "250px"}}>
-                                        <img src="static/images/icons/tools.webp" fetchpriority="high" alt="Tools" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
+                                        <img src="static/images/icons/tools.webp" fetchpriority="high" alt="Tools and softwares" width={"60"} height={"60"} style={{marginBottom: "5px"}}/><br/>
                                         <span style={{fontSize:"20px", color:"rgba(24, 24, 24, 1)"}}>More!</span><br/>
                                         <span style={{fontSize:"15px"}}>Git, Photoshop, Premiere Pro, Pro Tools, Reaper, OpenGL and computer rendering, </span>
                                     </div>
