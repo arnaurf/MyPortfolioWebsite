@@ -35,6 +35,7 @@ export default class HomePage extends Component{
             Name: '',
             Email: '',
             Message: '',
+            isNavOpen: false,
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -145,7 +146,7 @@ export default class HomePage extends Component{
 
             projects = Object.values(query).map( data => 
                 <div key={data.id} className="card-2" style={{width: "90%", margin:"15px", marginBottom: "50px", backgroundColor: "transparent"}}> 
-                    <h5 className="card-title" style={{color: "hsl(5, 100%, 69%)"}}>{data.title}</h5>
+                    <h3 className="h5 card-title" style={{color: "hsl(5, 100%, 69%)"}}>{data.title}</h3>
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
@@ -167,7 +168,7 @@ export default class HomePage extends Component{
         if (this.state !== undefined && this.state !== null) {
             experience = Object.values(this.state.experience).map( data => 
                 <div key={data.id} className="card-2" style={{width: "90%", margin:"15px", backgroundColor: "transparent"}}> 
-                    <h5 className="card-title" style={{color: "hsl(5, 100%, 69%)"}}>{data.title}</h5>
+                    <h3 className="h5 card-title" style={{color: "hsl(5, 100%, 69%)"}}>{data.title}</h3>
                     <p className="card-text">{data.description}</p>
                     <p className="card-text">{data.date}</p>
                     <hr></hr>
@@ -184,7 +185,7 @@ export default class HomePage extends Component{
                     <div className="container-fluid position-relative d-flex justify-content-between align-items-center">
 
                         {/* MOBILE: Left Menu toggle con atributos de Bootstrap 5 nativos */}
-                        <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                        <button className="navbar-toggler d-lg-none" type="button" onClick={() => this.setState({ isNavOpen: !this.state.isNavOpen })} aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
@@ -201,23 +202,22 @@ export default class HomePage extends Component{
                         <div className="d-lg-none" style={{ width: "40px" }}></div>
 
                         {/* Right: Nav links */}
-                        <div className="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarSupportedContent">
+                        <div className={`collapse navbar-collapse justify-content-end d-lg-flex ${this.state.isNavOpen ? 'show' : ''}`} id="navbarSupportedContent">
                             <ul className="navbar-nav">
-                                <li className="nav-item"><br></br></li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/bio" onClick={(e) => this.handleNavClick(e, 'bio')}>BIOGRAPHY</a>
+                                    <a className="nav-link" href="/bio" onClick={(e) => { this.handleNavClick(e, 'bio'); this.setState({ isNavOpen: false }); }}>BIOGRAPHY</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/skills" onClick={(e) => this.handleNavClick(e, 'skills')}>SKILLS</a>
+                                    <a className="nav-link" href="/skills" onClick={(e) => { this.handleNavClick(e, 'skills'); this.setState({ isNavOpen: false }); }}>SKILLS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/experience" onClick={(e) => this.handleNavClick(e, 'experience')}>WORK</a>
+                                    <a className="nav-link" href="/experience" onClick={(e) => { this.handleNavClick(e, 'experience'); this.setState({ isNavOpen: false }); }}>WORK</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/projects" onClick={(e) => this.handleNavClick(e, 'projects')}>PROJECTS</a>
+                                    <a className="nav-link" href="/projects" onClick={(e) => { this.handleNavClick(e, 'projects'); this.setState({ isNavOpen: false }); }}>PROJECTS</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/contact" onClick={(e) => this.handleNavClick(e, 'contact')}>CONTACT</a>
+                                    <a className="nav-link" href="/contact" onClick={(e) => { this.handleNavClick(e, 'contact'); this.setState({ isNavOpen: false }); }}>CONTACT</a>
                                 </li>
                             </ul>
                         </div>
