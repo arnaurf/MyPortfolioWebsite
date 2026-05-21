@@ -149,7 +149,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" aria-label={`Github url for ${data.title}`} target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="35" height="35" /> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" aria-label={`Github url for ${data.title}`} target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img" alt="Github profile" fetchpriority="high" width="20" height="20" /> Github</a>
                 </div>
             )
         } else {
@@ -224,7 +224,7 @@ export default class HomePage extends Component{
                             <div className="row justify-content-center align-items-center" style={{ marginTop: "50px" }}>
                                 <div className="col-12 col-lg-6 mb-5 mb-lg-0" style={{ maxWidth: "400px" }}>
                                     <center>
-                                        <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"250"} height={"250"} />
+                                        <img src="static/images/perfil.webp" fetchpriority="high" alt="Profile Photo" style={{ margin: "0px" }} width={"247"} height={"250"} />
                                         <br />
                                         <span style={{ color: "hsla(25, 50%, 100%, 0.95)", fontSize: "50px", margin: "10px", marginTop: "30px"}}>
                                             Arnau Ruiz
