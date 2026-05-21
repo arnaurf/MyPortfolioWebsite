@@ -5,7 +5,7 @@ function getCookie(name) {
     if (document.cookie && document.cookie !== '') {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
-            var cookie = cookies[i].trim(); // Cambiado jQuery.trim por .trim() nativo
+            var cookie = cookies[i].trim(); 
             if (cookie.substring(0, name.length + 1) === (name + '=')) {
                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                 break;
@@ -89,24 +89,23 @@ export default class HomePage extends Component{
             .then((response) => response.json())
             .then((data) => this.setState({category: data}));
 
-        // Scroll
+        // Scroll suave al cargar si hay ruta
         const path = window.location.pathname.replace('/', '');
         if (path && path !== "") {
             setTimeout(() => {
                 const element = document.getElementById(path);
                 if (element) {
-                    element.scrollIntoView({ behavior: 'auto' }); // 'auto' para que sea instantáneo al cargar
+                    element.scrollIntoView({ behavior: 'auto' });
                 }
             }, 500); 
         }
-        }
+    }
 
     handleNavClick = (e, targetId) => {
-        e.preventDefault(); // Detiene la recarga de la página
+        e.preventDefault(); 
         const element = document.getElementById(targetId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-            // Actualiza la URL en la barra de direcciones sin recargar
             window.history.pushState(null, null, `/${targetId}`);
         }
     };
@@ -114,26 +113,27 @@ export default class HomePage extends Component{
     render(){
         let projects;
         let category_text;
-        const handleClick = (prop) =>{ (this.setState({currentCategory: prop.target.id})) };
+        const handleClick = (prop) => { this.setState({currentCategory: prop.target.id}) };
 
         if (this.state !== undefined && this.state !== null) {
             let categories;
             const allBtnClass = `btn btn-secondary ${this.state.currentCategory == 0 ? 'active' : ''}`;
-            category_text = (<div className="btn-group" style={{margin: "15px"}} role="group" aria-label="Basic example">
-                <button type="button" id="0" className={allBtnClass} onClick={handleClick} style={{fontSize: "15px"}}>
-                    All
-                </button>
-                {categories = Object.values(this.state.category).map( data => {
-                    const btnClass = `btn btn-secondary ${data.id == this.state.currentCategory ? 'active' : ''}`;
-                    return (
-                        <button id={data.id} key={data.id} type="button"  className={btnClass} onClick={handleClick} style={{fontSize: "15px"}}>
-                            {data.name}
-                        </button>
-                    );
-                })}
+            category_text = (
+                <div className="btn-group" style={{margin: "15px"}} role="group" aria-label="Basic example">
+                    <button type="button" id="0" className={allBtnClass} onClick={handleClick} style={{fontSize: "15px"}}>
+                        All
+                    </button>
+                    {categories = Object.values(this.state.category).map( data => {
+                        const btnClass = `btn btn-secondary ${data.id == this.state.currentCategory ? 'active' : ''}`;
+                        return (
+                            <button id={data.id} key={data.id} type="button" className={btnClass} onClick={handleClick} style={{fontSize: "15px"}}>
+                                {data.name}
+                            </button>
+                        );
+                    })}
                 </div>
             )
-        }else {
+        } else {
             category_text = '<br/>Loading';
         }
 
@@ -149,7 +149,7 @@ export default class HomePage extends Component{
                     <p className="card-text" style={{color: "#151515ff"}}>{data.subtitle}</p>
                     <hr></hr>
                     <p className="card-text" style={{whiteSpace: "pre-line",  fontSize:"15px"}}>{data.description}</p>
-                    <a href={data.github} className="btn btn-outline-primary" target="_blank"><img src="static/images/icons/github2.webp" id="btn-img"/> Github</a>
+                    <a href={data.github} className="btn btn-outline-primary" target="_blank" rel="noreferrer"><img src="static/images/icons/github2.webp" id="btn-img"/> Github</a>
                 </div>
             )
         } else {
@@ -176,7 +176,7 @@ export default class HomePage extends Component{
                 <nav className="navbar navbar-expand-lg navbar-light px-3 top" style={{ position: "fixed", width: "100%", zIndex: 1000 }}>
                     <div className="container-fluid position-relative d-flex justify-content-between align-items-center">
 
-                        {/* MOBILE: Left Menu toggle con atributos de Bootstrap 5 */}
+                        {/* MOBILE: Left Menu toggle con atributos de Bootstrap 5 nativos */}
                         <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -232,16 +232,16 @@ export default class HomePage extends Component{
                                     <span style={{ color: "#f7c6b5" }}>BMAT Music Innovators</span><br />
 
                                     <div style={{ marginTop: "8px" }}>
-                                        <a href="https://github.com/arnaurf/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github" width={"35"} /></a>
-                                        <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="linkedin" width={"35"} /></a>
-                                        <a href="mailto: arnauruiz1998@gmail.com" target="_blank"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Mail" width={"35"} /></a>
+                                        <a href="https://github.com/arnaurf/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/github.webp" fetchpriority="high" alt="Github" width={"35"} /></a>
+                                        <a href="https://www.linkedin.com/in/arnauruizfernandez/" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/linkedin.webp" fetchpriority="high" alt="linkedin" width={"35"} /></a>
+                                        <a href="mailto: arnauruiz1998@gmail.com" target="_blank" rel="noreferrer"><img style={{ margin: "10px" }} src="static/images/icons/mail.webp" fetchpriority="high" alt="Mail" width={"35"} /></a>
                                     </div>
                                 </center>
                             </div>
 
                             <div className="col-12 mb-5 col-lg-6" style={{ maxWidth: "800px", paddingTop: "0px", color: "hsla(27, 56%, 92%, 1.00)" }}>
                                 <h2 style={{ textAlign: "left", fontSize: "2rem", fontWeight: "700", marginBottom: "20px", color: "hsla(25, 50%, 100%, 0.95)" }}>
-                                    <p className="text-center text-lg-start">A Barcelona-based Engineer fusing technology with creativity</p>
+                                    <span className="text-center text-lg-start d-block">A Barcelona-based Engineer fusing technology with creativity</span>
                                 </h2>
                                 <hr style={{ borderColor: "#FFFF", margin: "30px auto", width: "95%" }} /> 
                                 <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
